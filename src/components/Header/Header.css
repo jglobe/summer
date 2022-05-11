@@ -1,0 +1,21 @@
+.header {
+  height: var(--size-header-height);
+  padding: 16px 40px;
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 22px;
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 450px) {
+  .header {
+    padding: 16px;
+  }
+}
